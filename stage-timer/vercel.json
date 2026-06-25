@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "public": true,
+  "rewrites": [
+    { "source": "/", "destination": "/public/index.html" },
+    { "source": "/operator", "destination": "/public/operator.html" },
+    { "source": "/display", "destination": "/public/display.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache" }
+      ]
+    }
+  ]
+}
